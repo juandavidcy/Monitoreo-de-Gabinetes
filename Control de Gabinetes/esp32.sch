@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,296 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32D U1
+U 1 1 609B6901
+P 5650 3300
+F 0 "U1" H 5650 4881 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 5650 4790 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5650 1800 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 5350 3350 50  0001 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AF11EF
+P 1800 1850
+F 0 "C?" H 1915 1896 50  0000 L CNN
+F 1 "0.1uf" H 1915 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 1700 50  0001 C CNN
+F 3 "~" H 1800 1850 50  0001 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AF1541
+P 1400 1850
+F 0 "C?" H 1285 1804 50  0000 R CNN
+F 1 "10uf" H 1285 1895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1438 1700 50  0001 C CNN
+F 3 "~" H 1400 1850 50  0001 C CNN
+	1    1400 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1700 1400 1500
+Wire Wire Line
+	1400 1500 1600 1500
+Wire Wire Line
+	1800 1500 1800 1700
+Wire Wire Line
+	1400 2000 1400 2250
+Wire Wire Line
+	1800 2250 1800 2000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DD778F
+P 5650 1700
+F 0 "#PWR?" H 5650 1550 50  0001 C CNN
+F 1 "+3.3V" H 5665 1873 50  0000 C CNN
+F 2 "" H 5650 1700 50  0001 C CNN
+F 3 "" H 5650 1700 50  0001 C CNN
+	1    5650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1700 5650 1900
+$Comp
+L power:GND #PWR?
+U 1 1 60DD8C2E
+P 5650 4900
+F 0 "#PWR?" H 5650 4650 50  0001 C CNN
+F 1 "GND" H 5655 4727 50  0000 C CNN
+F 2 "" H 5650 4900 50  0001 C CNN
+F 3 "" H 5650 4900 50  0001 C CNN
+	1    5650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4700 5650 4900
+$Comp
+L Device:R R?
+U 1 1 60DDAD0C
+P 9100 3500
+F 0 "R?" V 8893 3500 50  0000 C CNN
+F 1 "10K" H 8984 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9030 3500 50  0001 C CNN
+F 3 "~" H 9100 3500 50  0001 C CNN
+	1    9100 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60DE8A30
+P 9100 3700
+F 0 "SW?" H 9100 3650 50  0000 C CNN
+F 1 "SW_Push" H 9100 3550 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 9100 3893 50  0001 C CNN
+F 3 "~" H 9100 3900 50  0001 C CNN
+	1    9100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DEAE68
+P 8750 3900
+F 0 "#PWR?" H 8750 3650 50  0001 C CNN
+F 1 "GND" H 8755 3727 50  0000 C CNN
+F 2 "" H 8750 3900 50  0001 C CNN
+F 3 "" H 8750 3900 50  0001 C CNN
+	1    8750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3700 8750 3900
+Text Notes 5000 1450 0    50   ~ 0
+Cual es el valor de la bobina que\n debo colocar de desacoplamiento?\nAparte del VCC y GND del micro donde\nmas se debe colocar desacoplamiento?\n
+$Comp
+L power:GND #PWR?
+U 1 1 60DF3D45
+P 1600 2450
+F 0 "#PWR?" H 1600 2200 50  0001 C CNN
+F 1 "GND" H 1605 2277 50  0000 C CNN
+F 2 "" H 1600 2450 50  0001 C CNN
+F 3 "" H 1600 2450 50  0001 C CNN
+	1    1600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DF56E9
+P 1600 1300
+F 0 "#PWR?" H 1600 1150 50  0001 C CNN
+F 1 "+3.3V" H 1615 1473 50  0000 C CNN
+F 2 "" H 1600 1300 50  0001 C CNN
+F 3 "" H 1600 1300 50  0001 C CNN
+	1    1600 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1300 1600 1400
+Connection ~ 1600 1500
+Wire Wire Line
+	1600 1500 1800 1500
+Text HLabel 1500 1250 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	1500 1250 1500 1400
+Wire Wire Line
+	1500 1400 1600 1400
+Connection ~ 1600 1400
+Wire Wire Line
+	1600 1400 1600 1500
+Wire Wire Line
+	1400 2250 1600 2250
+Wire Wire Line
+	1600 2450 1600 2350
+Connection ~ 1600 2250
+Wire Wire Line
+	1600 2250 1800 2250
+Text HLabel 1500 2450 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1500 2450 1500 2350
+Wire Wire Line
+	1500 2350 1600 2350
+Connection ~ 1600 2350
+Wire Wire Line
+	1600 2350 1600 2250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DFF360
+P 8750 3250
+F 0 "#PWR?" H 8750 3100 50  0001 C CNN
+F 1 "+3.3V" H 8765 3423 50  0000 C CNN
+F 2 "" H 8750 3250 50  0001 C CNN
+F 3 "" H 8750 3250 50  0001 C CNN
+	1    8750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3250 8750 3500
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60E0C30F
+P 9400 2100
+F 0 "J?" H 9480 2092 50  0000 L CNN
+F 1 "Conn_01x04" H 9480 2001 50  0000 L CNN
+F 2 "" H 9400 2100 50  0001 C CNN
+F 3 "~" H 9400 2100 50  0001 C CNN
+	1    9400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2300 8950 2300
+Wire Wire Line
+	8950 2000 9200 2000
+Wire Wire Line
+	9200 2100 8950 2100
+Wire Wire Line
+	9200 2200 8950 2200
+Wire Wire Line
+	6250 2400 6450 2400
+Wire Wire Line
+	6450 2200 6250 2200
+Text Label 6450 2200 0    50   ~ 0
+TX
+Text Label 6450 2400 0    50   ~ 0
+RX
+Text Label 8950 2000 2    50   ~ 0
+TX
+Text Label 8950 2100 2    50   ~ 0
+RX
+Text Label 8950 2200 2    50   ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 60E12E44
+P 8950 2300
+F 0 "#PWR?" H 8950 2050 50  0001 C CNN
+F 1 "GND" V 8955 2172 50  0000 R CNN
+F 2 "" H 8950 2300 50  0001 C CNN
+F 3 "" H 8950 2300 50  0001 C CNN
+	1    8950 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 3500 8750 3500
+Wire Wire Line
+	8900 3700 8750 3700
+Wire Wire Line
+	9300 3700 9450 3700
+Wire Wire Line
+	9450 3700 9450 3500
+Wire Wire Line
+	9450 3500 9250 3500
+Wire Wire Line
+	9650 3500 9450 3500
+Connection ~ 9450 3500
+Text Label 9650 3500 0    50   ~ 0
+RESET
+Wire Wire Line
+	4850 2100 5050 2100
+Text Label 4850 2100 2    50   ~ 0
+RESET
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E3AA57
+P 9450 4600
+F 0 "#PWR?" H 9450 4450 50  0001 C CNN
+F 1 "+3.3V" H 9465 4773 50  0000 C CNN
+F 2 "" H 9450 4600 50  0001 C CNN
+F 3 "" H 9450 4600 50  0001 C CNN
+	1    9450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60E3B498
+P 9100 4800
+F 0 "R?" V 8893 4800 50  0000 C CNN
+F 1 "10K" V 8984 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9030 4800 50  0001 C CNN
+F 3 "~" H 9100 4800 50  0001 C CNN
+	1    9100 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60E3CE15
+P 9100 5100
+F 0 "R?" V 8893 5100 50  0000 C CNN
+F 1 "10K" V 8984 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9030 5100 50  0001 C CNN
+F 3 "~" H 9100 5100 50  0001 C CNN
+	1    9100 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 4800 9450 4600
+Wire Wire Line
+	9250 4800 9450 4800
+Wire Wire Line
+	9250 5100 9450 5100
+Wire Wire Line
+	9450 5100 9450 4800
+Connection ~ 9450 4800
+Wire Wire Line
+	8750 4800 8950 4800
+Wire Wire Line
+	8750 5100 8950 5100
+Text Label 8750 4800 2    50   ~ 0
+SDA
+Text Label 8750 5100 2    50   ~ 0
+SCL
+Wire Wire Line
+	6450 4100 6250 4100
+Wire Wire Line
+	6450 4200 6250 4200
+Text Label 6450 4200 0    50   ~ 0
+SDA
+Text Label 6450 4100 0    50   ~ 0
+SCL
 $EndSCHEMATC
