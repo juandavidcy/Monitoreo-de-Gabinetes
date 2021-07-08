@@ -133,7 +133,7 @@ F 3 "" H 2450 1650 50  0001 C CNN
 	1    2450 1650
 	0    1    1    0   
 $EndComp
-Text Label 2450 4550 0    50   ~ 0
+Text Label 3200 4650 0    50   ~ 0
 S_HUMEDAD
 $Comp
 L power:GND #PWR0120
@@ -148,8 +148,6 @@ F 3 "" H 2450 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2250 2450 2450 2450
-Wire Wire Line
-	2450 4550 2250 4550
 Wire Wire Line
 	2450 4450 2250 4450
 Wire Wire Line
@@ -183,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 1550 2450 1550
 Connection ~ 2450 1550
-Text Label 2450 1350 0    50   ~ 0
+Text Label 2450 1450 0    50   ~ 0
 S_APERTURA
 Wire Wire Line
 	2450 1650 2350 1650
@@ -258,10 +256,8 @@ F 3 "~" H 3450 2550 50  0001 C CNN
 	1    3450 2550
 	0    -1   -1   0   
 $EndComp
-Text Label 3150 2700 0    50   ~ 0
+Text Label 3200 2650 0    50   ~ 0
 S_MOVIMIENTO
-Wire Wire Line
-	3150 2700 3150 2550
 Connection ~ 3150 2550
 Wire Wire Line
 	3150 2550 3300 2550
@@ -278,4 +274,70 @@ F 3 "" H 3800 2550 50  0001 C CNN
 	1    3800 2550
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2250 4550 2650 4550
+Text HLabel 3200 4750 2    50   Output ~ 0
+S_HUMEDAD
+Wire Wire Line
+	3200 2750 3150 2750
+Wire Wire Line
+	3150 2550 3150 2650
+Text HLabel 3200 2750 2    50   Output ~ 0
+S_MOVIMIENTO
+Text HLabel 2450 1350 2    50   Output ~ 0
+S_APERTURA
+$Comp
+L Device:R R?
+U 1 1 60E5FD52
+P 2800 4550
+F 0 "R?" V 3007 4550 50  0000 C CNN
+F 1 "10K" V 2916 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2730 4550 50  0001 C CNN
+F 3 "~" H 2800 4550 50  0001 C CNN
+	1    2800 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60E605A2
+P 3500 4550
+F 0 "R?" V 3707 4550 50  0000 C CNN
+F 1 "10K" V 3616 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 4550 50  0001 C CNN
+F 3 "~" H 3500 4550 50  0001 C CNN
+	1    3500 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 4550 3150 4550
+$Comp
+L power:GND #PWR?
+U 1 1 60E61546
+P 3850 4550
+F 0 "#PWR?" H 3850 4300 50  0001 C CNN
+F 1 "GND" V 3855 4422 50  0000 R CNN
+F 2 "" H 3850 4550 50  0001 C CNN
+F 3 "" H 3850 4550 50  0001 C CNN
+	1    3850 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 4550 3650 4550
+Wire Wire Line
+	3150 4750 3150 4650
+Connection ~ 3150 4550
+Wire Wire Line
+	3150 4550 2950 4550
+Wire Wire Line
+	3200 4750 3150 4750
+Wire Wire Line
+	3200 2650 3150 2650
+Connection ~ 3150 2650
+Wire Wire Line
+	3150 2650 3150 2750
+Wire Wire Line
+	3200 4650 3150 4650
+Connection ~ 3150 4650
+Wire Wire Line
+	3150 4650 3150 4550
 $EndSCHEMATC

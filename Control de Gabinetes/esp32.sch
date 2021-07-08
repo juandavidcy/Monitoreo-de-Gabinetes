@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -59,16 +59,14 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60DD778F
-P 5650 1200
-F 0 "#PWR?" H 5650 1050 50  0001 C CNN
-F 1 "+3.3V" H 5665 1373 50  0000 C CNN
-F 2 "" H 5650 1200 50  0001 C CNN
-F 3 "" H 5650 1200 50  0001 C CNN
-	1    5650 1200
+P 5650 1700
+F 0 "#PWR?" H 5650 1550 50  0001 C CNN
+F 1 "+3.3V" H 5665 1873 50  0000 C CNN
+F 2 "" H 5650 1700 50  0001 C CNN
+F 3 "" H 5650 1700 50  0001 C CNN
+	1    5650 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 1700 5650 1900
 $Comp
 L power:GND #PWR?
 U 1 1 60DD8C2E
@@ -117,8 +115,6 @@ F 3 "" H 8900 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 3300 8900 3500
-Text Notes 5000 900  0    50   ~ 0
-Cual es el valor de la bobina que\n debo colocar de desacoplamiento?\nAparte del VCC y GND del micro donde\nmas se debe colocar desacoplamiento?\n
 $Comp
 L power:GND #PWR?
 U 1 1 60DF3D45
@@ -301,19 +297,6 @@ Text Label 6450 3500 0    50   ~ 0
 SDA
 Text Label 6450 3600 0    50   ~ 0
 SCL
-$Comp
-L Device:L L?
-U 1 1 60E365EB
-P 5650 1550
-F 0 "L?" H 5702 1596 50  0000 L CNN
-F 1 "330 ohm" H 5702 1505 50  0000 L CNN
-F 2 "" H 5650 1550 50  0001 C CNN
-F 3 "~" H 5650 1550 50  0001 C CNN
-	1    5650 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 1200 5650 1400
 Wire Wire Line
 	9000 4950 9050 4950
 Wire Wire Line
@@ -348,4 +331,46 @@ Text HLabel 6450 2800 2    50   Input ~ 0
 S_MOVIMIENTO
 Text HLabel 6450 2900 2    50   Input ~ 0
 S_APERTURA
+Wire Wire Line
+	5650 1900 5650 1700
+Wire Wire Line
+	6450 3200 6250 3200
+Wire Wire Line
+	6450 3100 6250 3100
+Text HLabel 6450 3100 2    50   Input ~ 0
+RX2
+Text HLabel 6450 3200 2    50   Output ~ 0
+TX2
+Wire Wire Line
+	6450 3000 6250 3000
+Text HLabel 6450 3000 2    50   Output ~ 0
+PWRKEY
+Wire Wire Line
+	6450 3800 6250 3800
+Text HLabel 6450 3800 2    50   Output ~ 0
+SLEEP1
+Wire Wire Line
+	6450 3900 6250 3900
+Text HLabel 6450 3900 2    50   Output ~ 0
+RESET_L
+Wire Wire Line
+	6450 3300 6250 3300
+Text HLabel 6450 3300 2    50   BiDi ~ 0
+SCK
+Wire Wire Line
+	6450 3400 6250 3400
+Text HLabel 6450 3400 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	6450 3700 6250 3700
+Text HLabel 6450 3700 2    50   Output ~ 0
+MOSI
+Wire Wire Line
+	6450 2300 6250 2300
+Text HLabel 6450 2300 2    50   Output ~ 0
+CS
+Wire Wire Line
+	6450 4000 6250 4000
+Text HLabel 6450 4000 2    50   Output ~ 0
+DIO0
 $EndSCHEMATC
