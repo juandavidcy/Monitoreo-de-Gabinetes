@@ -19,7 +19,7 @@ U 1 1 60F4A02A
 P 5100 2300
 F 0 "Q2" H 5290 2346 50  0000 L CNN
 F 1 "PN2222A" H 5290 2255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 2225 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 2225 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 5100 2300 50  0001 L CNN
 	1    5100 2300
 	1    0    0    -1  
@@ -31,7 +31,7 @@ P 5400 1600
 F 0 "K1" H 5830 1646 50  0000 L CNN
 F 1 "FINDER-36.11" H 5830 1555 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_Finder_36.11" H 6670 1570 50  0001 C CNN
-F 3 "https://www.didacticaselectronicas.com/index.php/elementos-electromecanicos/relays-1/mecanicos/relevo-5v-20a-5-pines-relays-relevadores-reles-mini-de-5v-de-5-pines-mec%C3%A1nicos-detail" H 5400 1600 50  0001 C CNN
+F 3 "https://www.didacticaselectronicas.com/index.php/elementos-electromecanicos/relays-1/mecanicos/relevo-5v-10a-5-pines-srd-5vdc-sl-c-relevos-1-relevadores-relay-rele-relays-reles-mec%C3%A1nicos-de-5v-con-de-5-pines-rel-025-detail" H 5400 1600 50  0001 C CNN
 	1    5400 1600
 	1    0    0    -1  
 $EndComp
@@ -194,7 +194,7 @@ U 1 1 60F826E2
 P 5100 4800
 F 0 "Q3" H 5290 4846 50  0000 L CNN
 F 1 "PN2222A" H 5290 4755 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 4725 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 4725 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 5100 4800 50  0001 L CNN
 	1    5100 4800
 	1    0    0    -1  
@@ -360,7 +360,7 @@ LINEA2_CARGA
 Wire Wire Line
 	2200 4500 2600 4500
 Text Label 2350 4500 0    50   ~ 0
-RELAY1
+RELAY2
 Text HLabel 2200 4500 0    50   Input ~ 0
 RELAY2
 $Comp
@@ -369,7 +369,7 @@ U 1 1 60FA9C41
 P 5100 7250
 F 0 "Q4" H 5290 7296 50  0000 L CNN
 F 1 "PN2222A" H 5290 7205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 7175 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 7175 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 5100 7250 50  0001 L CNN
 	1    5100 7250
 	1    0    0    -1  
@@ -535,7 +535,7 @@ LINEA3_CARGA
 Wire Wire Line
 	2200 6950 2600 6950
 Text Label 2350 6950 0    50   ~ 0
-RELAY1
+RELAY3
 Text HLabel 2200 6950 0    50   Input ~ 0
 RELAY3
 $Comp
@@ -544,7 +544,7 @@ U 1 1 60FA9CA4
 P 5100 9750
 F 0 "Q5" H 5290 9796 50  0000 L CNN
 F 1 "PN2222A" H 5290 9705 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 9675 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 9675 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 5100 9750 50  0001 L CNN
 	1    5100 9750
 	1    0    0    -1  
@@ -710,7 +710,7 @@ LINEA4_CARGA
 Wire Wire Line
 	2200 9450 2600 9450
 Text Label 2350 9450 0    50   ~ 0
-RELAY1
+RELAY4
 Text HLabel 2200 9450 0    50   Input ~ 0
 RELAY4
 $Comp
@@ -794,4 +794,6 @@ GND
 Wire Wire Line
 	2800 7250 2900 7250
 Connection ~ 2900 7250
+Text Notes 4700 800  0    79   ~ 0
+ACTUADORES
 $EndSCHEMATC
