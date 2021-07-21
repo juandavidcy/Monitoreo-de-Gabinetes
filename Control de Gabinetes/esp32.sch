@@ -296,15 +296,15 @@ Wire Wire Line
 	6450 4100 6250 4100
 Wire Wire Line
 	6450 4200 6250 4200
-Text HLabel 6450 4000 2    50   Output ~ 0
+Text HLabel 6450 2900 2    50   Output ~ 0
 DIO0
 Wire Wire Line
 	6450 4000 6250 4000
-Text HLabel 6450 3900 2    50   Output ~ 0
+Text HLabel 6450 2700 2    50   Output ~ 0
 RESET_L
 Wire Wire Line
 	6450 3900 6250 3900
-Text HLabel 6450 3800 2    50   Output ~ 0
+Text HLabel 6450 3000 2    50   Output ~ 0
 SLEEP1
 Wire Wire Line
 	6450 3800 6250 3800
@@ -328,19 +328,19 @@ Text HLabel 6450 3300 2    50   BiDi ~ 0
 SCK
 Wire Wire Line
 	6450 3300 6250 3300
-Text HLabel 6450 3000 2    50   Output ~ 0
+Text HLabel 6450 2800 2    50   Output ~ 0
 PWRKEY
 Wire Wire Line
 	6450 3000 6250 3000
-Text HLabel 6450 2900 2    50   Input ~ 0
+Text HLabel 6450 4000 2    50   Input ~ 0
 S_APERTURA
 Wire Wire Line
 	6450 2900 6250 2900
-Text HLabel 6450 2700 2    50   Input ~ 0
+Text HLabel 6450 3800 2    50   Input ~ 0
 S_MOVIMIENTO
 Wire Wire Line
 	6450 2800 6250 2800
-Text HLabel 6450 2800 2    50   Input ~ 0
+Text HLabel 6450 3900 2    50   Input ~ 0
 S_HUMEDAD
 Wire Wire Line
 	6450 2700 6250 2700
@@ -396,32 +396,14 @@ F 3 "" H 5650 1700 50  0001 C CNN
 $EndComp
 Text Label 9800 4350 0    50   ~ 0
 IO0
-Connection ~ 9600 4350
 Wire Wire Line
 	9800 4350 9600 4350
-Wire Wire Line
-	9600 4350 9400 4350
 Wire Wire Line
 	9600 4550 9600 4350
 Wire Wire Line
 	9450 4550 9600 4550
 Wire Wire Line
 	9050 4550 8900 4550
-Wire Wire Line
-	9100 4350 8900 4350
-Wire Wire Line
-	8900 4100 8900 4350
-$Comp
-L power:+3.3V #PWR0145
-U 1 1 60F0477E
-P 8900 4100
-F 0 "#PWR0145" H 8900 3950 50  0001 C CNN
-F 1 "+3.3V" H 8915 4273 50  0000 C CNN
-F 2 "" H 8900 4100 50  0001 C CNN
-F 3 "" H 8900 4100 50  0001 C CNN
-	1    8900 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 4550 8900 4750
 $Comp
@@ -434,28 +416,6 @@ F 2 "" H 8900 4750 50  0001 C CNN
 F 3 "" H 8900 4750 50  0001 C CNN
 	1    8900 4750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 60F04771
-P 9250 4550
-F 0 "SW2" H 9250 4500 50  0000 C CNN
-F 1 "ARRANQUE" H 9250 4400 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 9250 4743 50  0001 C CNN
-F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/165/TL3342.pdf" H 9250 4750 50  0001 C CNN
-	1    9250 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R32
-U 1 1 60F0476B
-P 9250 4350
-F 0 "R32" V 9043 4350 50  0000 C CNN
-F 1 "10K" H 9134 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 4350 50  0001 C CNN
-F 3 "~" H 9250 4350 50  0001 C CNN
-	1    9250 4350
-	0    1    1    0   
 $EndComp
 Text HLabel 9000 5950 0    50   BiDi ~ 0
 SCL
@@ -539,21 +499,6 @@ Wire Wire Line
 Wire Wire Line
 	9050 3300 8900 3300
 Wire Wire Line
-	9100 3100 8900 3100
-Wire Wire Line
-	8900 2850 8900 3100
-$Comp
-L power:+3.3V #PWR0137
-U 1 1 60DFF360
-P 8900 2850
-F 0 "#PWR0137" H 8900 2700 50  0001 C CNN
-F 1 "+3.3V" H 8915 3023 50  0000 C CNN
-F 2 "" H 8900 2850 50  0001 C CNN
-F 3 "" H 8900 2850 50  0001 C CNN
-	1    8900 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	8900 3300 8900 3500
 $Comp
 L power:GND #PWR0134
@@ -576,17 +521,6 @@ F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 9250 3493 50  0001 C CNN
 F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/165/TL3342.pdf" H 9250 3500 50  0001 C CNN
 	1    9250 3300
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 60DDAD0C
-P 9250 3100
-F 0 "R10" V 9043 3100 50  0000 C CNN
-F 1 "10K" H 9134 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 3100 50  0001 C CNN
-F 3 "~" H 9250 3100 50  0001 C CNN
-	1    9250 3100
-	0    1    1    0   
 $EndComp
 Text Label 1950 3850 2    50   ~ 0
 DTR
@@ -628,4 +562,50 @@ F 3 "~" H 2400 3750 50  0001 C CNN
 	1    2400 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 60F04771
+P 9250 4550
+F 0 "SW2" H 9250 4500 50  0000 C CNN
+F 1 "ARRANQUE" H 9250 4400 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 9250 4743 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/165/TL3342.pdf" H 9250 4750 50  0001 C CNN
+	1    9250 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 9600 4350
+Wire Wire Line
+	9600 4350 9400 4350
+$Comp
+L Device:C C7
+U 1 1 6100DA28
+P 9250 3100
+F 0 "C7" V 9502 3100 50  0000 C CNN
+F 1 "0.1uf" V 9411 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9288 2950 50  0001 C CNN
+F 3 "~" H 9250 3100 50  0001 C CNN
+	1    9250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 610107FF
+P 9250 4350
+F 0 "C8" V 8998 4350 50  0000 C CNN
+F 1 "0.1uf" V 9089 4350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9288 4200 50  0001 C CNN
+F 3 "~" H 9250 4350 50  0001 C CNN
+	1    9250 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 3100 8900 3100
+Wire Wire Line
+	8900 3100 8900 3300
+Connection ~ 8900 3300
+Wire Wire Line
+	9100 4350 8900 4350
+Wire Wire Line
+	8900 4350 8900 4550
+Connection ~ 8900 4550
 $EndSCHEMATC

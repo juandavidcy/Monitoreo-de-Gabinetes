@@ -94,8 +94,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 4300 2600 4300
 Wire Wire Line
-	2200 3600 2600 3600
-Wire Wire Line
 	2100 3500 2600 3500
 Wire Wire Line
 	2200 4500 2600 4500
@@ -156,19 +154,6 @@ Wire Wire Line
 	2600 3800 2400 3800
 Wire Wire Line
 	2600 3900 2400 3900
-$Comp
-L Device:Antenna AE1
-U 1 1 60EE4EBF
-P 4600 4000
-F 0 "AE1" H 4680 3989 50  0000 L CNN
-F 1 "Antenna" H 4680 3898 50  0000 L CNN
-F 2 "RF_Antenna:Texas_SWRA416_868MHz_915MHz" H 4600 4000 50  0001 C CNN
-F 3 "~" H 4600 4000 50  0001 C CNN
-	1    4600 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 4300 4600 4300
 Wire Wire Line
 	4600 4300 4600 4200
 $Comp
@@ -295,4 +280,21 @@ Wire Wire Line
 	1000 4500 1000 4300
 Wire Wire Line
 	1350 4500 1350 4300
+Wire Wire Line
+	4000 4300 4600 4300
+Wire Wire Line
+	2200 3600 2600 3600
+Text Label 4350 4300 0    50   ~ 0
+ANT
+$Comp
+L Device:Antenna AE1
+U 1 1 60EE4EBF
+P 4600 4000
+F 0 "AE1" H 4680 3989 50  0000 L CNN
+F 1 "Antenna" H 4680 3898 50  0000 L CNN
+F 2 "RF-LORA-868-SO:Texas_SWRA416_868MHz_915MHz" H 4600 4000 50  0001 C CNN
+F 3 "~" H 4600 4000 50  0001 C CNN
+	1    4600 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

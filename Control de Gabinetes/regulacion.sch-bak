@@ -352,4 +352,37 @@ Connection ~ 4300 3300
 Wire Wire Line
 	5000 4300 4300 4300
 Connection ~ 4300 4300
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 610E1A2D
+P 1550 2500
+F 0 "H2" H 1650 2546 50  0000 L CNN
+F 1 "MountingHole" H 1650 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 1550 2500 50  0001 C CNN
+F 3 "~" H 1550 2500 50  0001 C CNN
+	1    1550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 610E2A51
+P 1350 2500
+F 0 "H1" H 1450 2546 50  0000 L CNN
+F 1 "MountingHole" H 1450 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 1350 2500 50  0001 C CNN
+F 3 "~" H 1350 2500 50  0001 C CNN
+	1    1350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 610E2D5F
+P 1800 2500
+F 0 "H3" H 1900 2546 50  0000 L CNN
+F 1 "MountingHole" H 1900 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 1800 2500 50  0001 C CNN
+F 3 "~" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

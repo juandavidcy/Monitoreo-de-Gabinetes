@@ -151,12 +151,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0123
 U 1 1 60F70F7A
-P 4200 2950
-F 0 "#PWR0123" H 4200 2700 50  0001 C CNN
-F 1 "GND" H 4205 2777 50  0000 C CNN
-F 2 "" H 4200 2950 50  0001 C CNN
-F 3 "" H 4200 2950 50  0001 C CNN
-	1    4200 2950
+P 4200 2900
+F 0 "#PWR0123" H 4200 2650 50  0001 C CNN
+F 1 "GND" H 4205 2727 50  0000 C CNN
+F 2 "" H 4200 2900 50  0001 C CNN
+F 3 "" H 4200 2900 50  0001 C CNN
+	1    4200 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -719,7 +719,7 @@ U 1 1 60FB85E2
 P 6600 1500
 F 0 "J7" H 6680 1492 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 6680 1401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 1500 50  0001 C CNN
+F 2 "TerminalBlockjuan:TerminalBlock_bornier-2_P5.08mm" H 6600 1500 50  0001 C CNN
 F 3 "~https://www.didacticaselectronicas.com/index.php/suiches-y-conectores/borneras/bornera-2p-verde-kf128-5mm-kf128-2p-borneras-terminales-con-borneras-screw-terminal-terminal-block-de-2-pines-2-posiciones-kf128-5mm-detail" H 6600 1500 50  0001 C CNN
 	1    6600 1500
 	1    0    0    -1  
@@ -738,7 +738,7 @@ U 1 1 60FCD4D9
 P 6600 4000
 F 0 "J8" H 6680 3992 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 6680 3901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 4000 50  0001 C CNN
+F 2 "TerminalBlockjuan:TerminalBlock_bornier-2_P5.08mm" H 6600 4000 50  0001 C CNN
 F 3 "~https://www.didacticaselectronicas.com/index.php/suiches-y-conectores/borneras/bornera-2p-verde-kf128-5mm-kf128-2p-borneras-terminales-con-borneras-screw-terminal-terminal-block-de-2-pines-2-posiciones-kf128-5mm-detail" H 6600 4000 50  0001 C CNN
 	1    6600 4000
 	1    0    0    -1  
@@ -749,7 +749,7 @@ U 1 1 60FCE53F
 P 6600 6450
 F 0 "J9" H 6680 6442 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 6680 6351 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 6450 50  0001 C CNN
+F 2 "TerminalBlockjuan:TerminalBlock_bornier-2_P5.08mm" H 6600 6450 50  0001 C CNN
 F 3 "~https://www.didacticaselectronicas.com/index.php/suiches-y-conectores/borneras/bornera-2p-verde-kf128-5mm-kf128-2p-borneras-terminales-con-borneras-screw-terminal-terminal-block-de-2-pines-2-posiciones-kf128-5mm-detail" H 6600 6450 50  0001 C CNN
 	1    6600 6450
 	1    0    0    -1  
@@ -760,7 +760,7 @@ U 1 1 60FCEBD8
 P 6600 8950
 F 0 "J10" H 6680 8942 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 6680 8851 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 8950 50  0001 C CNN
+F 2 "TerminalBlockjuan:TerminalBlock_bornier-2_P5.08mm" H 6600 8950 50  0001 C CNN
 F 3 "~https://www.didacticaselectronicas.com/index.php/suiches-y-conectores/borneras/bornera-2p-verde-kf128-5mm-kf128-2p-borneras-terminales-con-borneras-screw-terminal-terminal-block-de-2-pines-2-posiciones-kf128-5mm-detail" H 6600 8950 50  0001 C CNN
 	1    6600 8950
 	1    0    0    -1  
